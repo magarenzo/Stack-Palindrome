@@ -1,5 +1,5 @@
 # stack-palindrome
-Tells you if a string is a palindrome, ignoring spaces, capitalization and special characters
+Uses a stack to tell you if a string is a palindrome, ignoring spaces, capitalization and special characters
 
 ---
 
