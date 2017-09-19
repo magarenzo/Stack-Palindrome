@@ -5,7 +5,8 @@ Uses a stack to determine if a string is a palindrome, ignoring spaces, capitali
 
 <h3>Output:</h3>
 
-`Enter a string:`<br>`<string> is a palindrome.` OR `<string> is not a palindrome.`
+`Enter a string (spaces, capitalization and special characters will be ignored):`<br><br>`<input> is a palindrome; ending program.
+`<br>OR<br>`<input> is not a palindrome; ending program.`<br>OR<br>`Empty input; ending program.`
 
 ---
 
