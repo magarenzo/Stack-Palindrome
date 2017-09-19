@@ -1,6 +1,6 @@
 import java.util.*;
 
-/** A program which tells you if a string is a palindrome, ignoring spaces, capitalization and special characters. */
+/** Uses a stack to determine if a string is a palindrome, ignoring spaces, capitalization and special characters. */
 public class stack_palindrome {
 
         /** The main method executes other methods within the class. */
@@ -15,12 +15,12 @@ public class stack_palindrome {
         public static String get_palindrome() {
                 Scanner s = new Scanner(System.in);
                 String p = "", p2 = "";
-                System.out.println("Enter a string:");
+                System.out.println("Enter a string (spaces, capitalization and special characters will be ignored):");
                 try {
                         p = s.nextLine();
                 } // end try
                 catch (InputMismatchException e) {
-                        System.out.println("Incorrect input; restart the program");
+                        System.out.println("Incorrect input; ending program.");
                         System.exit(0);
                 } // end catch
                 p.replaceAll("\\s+","");
@@ -43,19 +43,23 @@ public class stack_palindrome {
                 int i, e = p.length();
                 Stack<Character> s  = new Stack<>();
                 String p2 = "";
+                String a = "";
+                if (p.equals("")) {
+                        a = "Empty input; ending program.";
+                        return a;
+                } // end if
                 for (i = 0; i < e; i++) {
                         s.push(p.charAt(i));
                 } // end for
                 for (i = 0; i < e; i++) {
                         p2 = p2 + s.pop();
                 }
-                String a = "";
                 if (p.equals(p2)) {
-                        a = (p + " is a palindrome.");
+                        a = (p + " is a palindrome; ending program.");
                         return a;
                 } // end if
                 else {
-                        a = (p + " is not a palindrome.");
+                        a = (p + " is not a palindrome; ending program.");
                         return a;
                 } // end else
         } // end get_answeri
