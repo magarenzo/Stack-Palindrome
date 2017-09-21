@@ -22,4 +22,10 @@ Uses a stack to determine if a string is a palindrome, ignoring spaces, capitali
 
 ---
 
+<h3>To Do:</h3>
+
+* Improve efficiency
+
+---
+
 *stack_palindrome.java* was created as an assignment in CSC343 (Data Structures).
