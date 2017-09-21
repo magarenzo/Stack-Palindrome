@@ -3,6 +3,10 @@ Uses a stack to determine if a string is a palindrome, ignoring spaces, capitali
 
 ---
 
+*stack_palindrome.java* reads and stores the user's input, removing spaces, ignoring special characters, and changing all leftover characters to lowercase. By pushing to and popping from a stack, the program determines if the remaining string is a palindrome or not, printing the result in standard output to the user and ending the program. The program will also end if an incorrect input is entered by the user.
+
+---
+
 <h3>Output:</h3>
 
 `Enter a string (spaces, capitalization and special characters will be ignored):`<br><br>`<input> is a palindrome; ending program.
