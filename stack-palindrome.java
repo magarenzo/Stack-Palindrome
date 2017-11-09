@@ -1,18 +1,18 @@
 import java.util.*;
 
 /** Uses a stack to determine if a string is a palindrome, ignoring spaces, capitalization and special characters. */
-public class stack_palindrome {
-
+public class StackPalindrome {
+        
         /** The main method executes other methods within the class. */
         public static void main(String args[]) {
-                String p = get_palindrome();
-                String a = get_answer(p);
-                print_output(a);
+                String p = getPalindrome();
+                String a = getAnswer(p);
+                printOutput(a);
         } // end main
 
         /** Reads and stores the user's input; removes spaces, ignores special characters and changes all characters to lower case; returns the new string representing the palindrome.
         @return The new string representing the palindrome. */
-        public static String get_palindrome() {
+        public static String getPalindrome() {
                 Scanner s = new Scanner(System.in);
                 String p = "", p2 = "";
                 System.out.println("Enter a string (spaces, capitalization and special characters will be ignored):");
@@ -34,12 +34,12 @@ public class stack_palindrome {
                         } // end if
                 } // end for
                 return p2;
-        } // end get_palindrome
+        } // end getPalindrome
 
         /** Uses a stack to get a new string which is the palindrome printed backwards; returns a string containing wheter or not the user's inputted string is a palindrome.
         @return a The string containing whether or not the user's inputted string is a palindrome.
         @parameter p The new string representing the palindrome. */
-        public static String get_answer(String p) {
+        public static String getAnswer(String p) {
                 int i, e = p.length();
                 Stack<Character> s  = new Stack<>();
                 String p2 = "";
@@ -62,11 +62,12 @@ public class stack_palindrome {
                         a = (p + " is not a palindrome; ending program.");
                         return a;
                 } // end else
-        } // end get_answeri
+        } // end getAnswer
 
         /** Prints the string containing whether or not the user's inputted string is a palindrome.
         @return a The string containing whether or not the user's inputted string is a palindrome. */
-        public static void print_output(String a) {
+        public static void printOutput(String a) {
                 System.out.println(a);
-        } // end print_output
-} // end stack_palindrome
+        } // end printOutput     
+        
+} // end StackPalindrome
