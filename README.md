@@ -1,4 +1,4 @@
-# StackPalindrome
+# Stack Palindrome
 
 Uses a stack to determine if a string is a palindrome, ignoring spaces, capitalization and special characters
 
