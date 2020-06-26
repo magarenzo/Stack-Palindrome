@@ -21,6 +21,6 @@ Improve efficiency
 
 ## Owner
 
-* Michael A. Agarenzo
+Michael A. Agarenzo
 
-* This was created as an assignment in CSC343 (Data Structures).
+This was created as an assignment in CSC343 (Data Structures)
