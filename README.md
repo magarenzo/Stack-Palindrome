@@ -32,6 +32,6 @@ Improve efficiency
 
 ## Owner
 
-[Michael A. Agarenzo](https://magarenzo.com)
+[Michael A.](https://linkedin.com/in/magarenzo)
 
 This was created as an assignment in CSC343 (Data Structures)
